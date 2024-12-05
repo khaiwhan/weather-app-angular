@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WeatherApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+  <script>
+    const hours = new Date().getHours();
+    document.body.style.backgroundImage = hours >= 6 && hours < 18 ? "url('./assets/day.jpg')" : "url('./assets/night.jpg')"
+  </script>
+</body>
+
+</html>

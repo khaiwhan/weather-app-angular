@@ -1,0 +1,12 @@
+<div class="weather" [formGroup]="form">
+  <textbox [placeholder]="'City'" [hasLabel]="false" formControlName="city" (keyup.enter)="sendWeather()"></textbox>
+  <div class="content">
+    <span>
+      <img [src]="iconWeather" alt="" [class.d-none]="!iconWeather">
+      <h1 [class.d-none]="!iconWeather">{{temp + ' °C'}}</h1>
+    </span>
+    <p>{{weatherDescription}}</p>
+    <p>{{day | date:'EEEE, MMMM d, y h:mm a'}}</p>
+    <p>{{name}}</p>
+  </div>
+</div>

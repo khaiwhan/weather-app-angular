@@ -1,0 +1,25 @@
+input {
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+input::content {
+    padding: 0 20px;
+}
+
+input::placeholder{
+    color: lightgray;
+}
+
+.invalid {
+    color: #F57676;
+    font-size: 14px;
+    border-color: #F57676;
+}
