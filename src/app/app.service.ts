@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AppService {
-  private apiGeoUrl = 'http://api.openweathermap.org/geo/1.0/direct';
+  private apiGeoUrl = 'https://api.openweathermap.org/geo/1.0/direct';
   private apiWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
   private apiKey = 'd2986016ba002dce8aca54e4be3c7573';
 
